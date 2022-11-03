@@ -6,7 +6,9 @@
 
 ### La función asocia_der
 
-<!-- explicacion aqui -->
+<!-- Función que recibe una LProp y aplica la ley de la asociatividad hacia la derecha sobre los elementos de
+
+la expresión.  -->
 
 ```haskell
 asocia_der :: LProp -> LProp
@@ -23,7 +25,9 @@ asocia_der x = x
 
 ### La función asocia_izq
 
-<!-- explicacion aqui -->
+<!-- Función que recibe una LProp y aplica la ley de la asociatividad hacia la izquierda sobre los elementos de
+
+la expresión.-->
 
 ```haskell
 asocia_izq :: LProp -> LProp
@@ -40,7 +44,8 @@ asocia_izq x = x
 
 ### La función conm
 
-<!-- La explicacion aqui -->
+<!-- Función que recibe una LPropr y aplica la ley de la conmutatividad de forma exhaustiva sobre los elementos
+ de la expresión cuyo operador lógico sea conjunción o disyunción. -->
 
 ```haskell
 conm :: LProp -> LProp
@@ -53,7 +58,8 @@ conm x = x
 
 ### La función dist
 
-<!-- explicacion aqui -->
+<!-- Función que recibe una LProp y aplica la ley de distributividad de forma exhaustiva sobre toda la 
+expresión. -->
 
 ```haskell
 dist :: LProp -> LProp
@@ -68,7 +74,7 @@ dist x = x
 
 ### La función deMorgan
 
-<!-- la explicacion aqui -->
+<!-- Función que le aplica a una LProp las leyes de De morgan. -->
 
 ```haskell
 deMorgan :: LProp -> LProp
@@ -79,7 +85,8 @@ deMorgan x = x
 
 ### La función equiv_op
 
-<!-- explicacion aqui -->
+<!-- Función que recibe una LProp y aplica la equivalencia de operadores que se describe al inicio de este
+documento. -->
 
 ```haskell
 equiv_op :: LProp -> LProp
@@ -92,7 +99,7 @@ equiv_op x = x
 
 ### La función dobleNeg
 
-<!-- explicacion aqui -->
+<!-- Función que quita las dobles negaciones de una LProp.  -->
 
 ```haskell
 dobleNeg :: LProp -> LProp
@@ -107,7 +114,7 @@ dobleNeg x = x
 
 ### La función num_conectivos
 
-<!-- explicacion aqui -->
+<!-- Función que redibe una LProp y contesta con el número de conectivos lógicos en la expresión. -->
 
 ```haskell
 num_conectivos :: LProp -> Int
@@ -123,7 +130,9 @@ num_conectivos (Syss x y) = 1 + num_conectivos x + num_conectivos y
 
 ### La función interpretacion
 
-<!-- explicacion aqui -->
+<!-- Esta función va a tomar una LProp ψ y una asignación para regresar la interpretacion de ψ a partir de
+
+los valores de la asignación. -->
 
 ```haskell
 interpretacion:: LProp -> Asignacion -> Int
