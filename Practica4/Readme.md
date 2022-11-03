@@ -85,8 +85,7 @@ deMorgan x = x
 
 ### La función equiv_op
 
-<!-- Función que recibe una LProp y aplica la equivalencia de operadores que se describe al inicio de este
-documento. -->
+<!-- Función que recibe una LProp y aplica la equivalencia de operadores  -->
 
 ```haskell
 equiv_op :: LProp -> LProp
